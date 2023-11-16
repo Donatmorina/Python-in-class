@@ -18,26 +18,26 @@ def multiplikasjonstabell(n):
             resultat = tall * x
             print(f"{resultat:>{num_bredde}}", end=" ")
         print()
-
-
 #Oppgave 2
-
 def fakultet(z):
     resultat = 1 
-
     if type(z) == int:
         if z < 0:
             print("tallet må være større enn 0. ")
+    elif type(z) == float:
+        print("tallet kan ikke ha desimaler. ")
+        return 
         
     for i in range(1, z + 1):
         resultat *= i
     return resultat
-
-
 def fakultet_2(y):
     if type(y) == int:
         if y < 0:
             print("tallet må være større enn 0. ")
+    elif type(y) == float:
+        print("tallet kan ikke ha desimaler. ")
+        return
     resultat = 1
     i = 1
     while i <= y:
